@@ -13,9 +13,9 @@ router.get('/', getAllQuiz)
 router.get('/:id', getQuizDetails)
 
 // Take a quiz
-router.post('/:id/take', takeQuiz)
+router.post('/take/:id', takeQuiz)
 
 // View result of a quiz
-router.get('/:id/result', viewResult)
+router.get('/users/:userId/quizzes/:quizId/result', viewResult)
 
 module.exports = router
